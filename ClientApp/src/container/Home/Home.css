@@ -1,0 +1,7 @@
+.tile{
+    border: 1px solid red;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    font-size: 0;
+}

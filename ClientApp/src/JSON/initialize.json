@@ -1,0 +1,33 @@
+ {
+    "isSucceed": true,
+    "messages": [
+      
+    ],
+    "model": {
+      "setting": {
+        "startDate": "2018-06-01T00:00:00",
+        "endDate": "2018-06-11T00:00:00",
+        "generalStatus": 0
+      },
+      "winners": {
+        "winner": null,
+        "lotteryUsers": [
+          
+        ]
+      },
+      "user": {
+        "userName": "modir",
+        "fullName": "مجتبی رضایی",
+        "avatar": "5fc1ad73-9dbd-4f5d-8e52-f92c0e78946e.png"
+      },
+      "home": {
+        "status": 2,
+        "level": 8,
+        "mapVersion": null,
+        "tileSize": "12x20",
+        "score": 9520,
+        "click": 0,
+        "gift": 0
+      }
+    }
+  }

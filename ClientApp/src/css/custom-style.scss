@@ -1,0 +1,947 @@
+
+
+@font-face {
+  font-family: IRANSansWeb_FaNum;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_Medium.eot);
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_Medium.eot?#iefix) format('embedded-opentype'), url(./fonts/newFonts/faNum/IRANSansWeb_Medium.woff2) format('woff2'), url(./fonts/newFonts/faNum/IRANSansWeb_Medium.woff) format('woff'), url(./fonts/newFonts/faNum/IRANSans_Medium.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Bold.eot);
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Bold.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/woff2/IRANSansWeb_Bold.woff2) format("woff2"), url(./fonts/newFonts/woff/IRANSansWeb_Bold.woff) format("woff"), url(./fonts/newFonts/ttf/IRANSansWeb_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Medium.eot);
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/woff2/IRANSansWeb_Medium.woff2) format("woff2"), url(./fonts/newFonts/woff/IRANSansWeb_Medium.woff) format("woff"), url(./fonts/newFonts/ttf/IRANSansWeb_Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Light.eot);
+  src: url(./fonts/newFonts/eot/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/woff2/IRANSansWeb_Light.woff2) format("woff2"), url(./fonts/newFonts/woff/IRANSansWeb_Light.woff) format("woff"), url(./fonts/newFonts/ttf/IRANSansWeb_Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url(./fonts/newFonts/eot/IRANSansWeb_UltraLight.eot);
+  src: url(./fonts/newFonts/eot/IRANSansWeb_UltraLight.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/woff2/IRANSansWeb_UltraLight.woff2) format("woff2"), url(./fonts/newFonts/woff/IRANSansWeb_UltraLight.woff) format("woff"), url(./fonts/newFonts/ttf/IRANSansWeb_UltraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/newFonts/eot/IRANSansWeb.eot);
+  src: url(./fonts/newFonts/eot/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/woff2/IRANSansWeb.woff2) format("woff2"), url(./fonts/newFonts/woff/IRANSansWeb.woff) format("woff"), url(./fonts/newFonts/ttf/IRANSansWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: IRANSansWeb_FaNum;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/newFonts/faNum/IRANSans_Medium.eot);
+  src: url(./fonts/newFonts/faNum/IRANSans_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/faNum/IRANSansWeb.woff2) format("woff2"), url(./fonts/newFonts/faNum/IRANSansWeb.woff) format("woff"), url(./fonts/newFonts/faNum/IRANSans.ttf) format("truetype");
+}
+@font-face {
+  font-family: IRANSansWeb_FaNum;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_Light.eot);
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/faNum/IRANSansWeb_Light.woff2) format("woff2"), url(./fonts/newFonts/faNum/IRANSansWeb_Light.woff) format("woff"), url(./fonts/newFonts/faNum/IRANSans_Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: IRANSansWeb_FaNum;
+  font-style: normal;
+  font-weight: 100;
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_UltraLight.eot);
+  src: url(./fonts/newFonts/faNum/IRANSansWeb_UltraLight.eot?#iefix) format("embedded-opentype"), url(./fonts/newFonts/faNum/IRANSansWeb_UltraLight.woff2) format("woff2"), url(./fonts/newFonts/faNum/IRANSansWeb_UltraLight.woff) format("woff"), url(./fonts/newFonts/faNum/IRANSans_UltraLight.ttf) format("truetype");
+}
+
+
+//vars 
+$red : #FF1744;
+$blue : #146fd7;
+
+
+*{
+  box-sizing: border-box;
+}
+*:not(i ):not(.ui-button-icon):not(.k-icon):not(.fa){
+  font-family: IRANSans ;
+}
+body{
+  direction: rtl;
+  font-size: 14px;
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #EEF2F6;
+  // overflow-x: visible
+}
+.faNum{
+  font-family: IRANSansWeb_FaNum !important;
+}
+.mrg5T{
+  margin-top: 5px;
+}
+.mrgT10{
+  margin-top: 10px;
+}
+.mrg5B{
+  margin-bottom: 5px;
+}
+.mrg20T{
+  margin-top: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
+input{
+  height: 100%;
+}
+.d-block{
+  display: block !important;
+}
+
+.layout-wrapper {
+    .layout-menu-container{
+        right: 0;
+    }
+  }
+
+.layout-wrapper{
+ .topbar {
+  .topbar-right {
+      .topbar-logo {
+        height: 30px;
+      }
+      #menu-button{
+        right:219px;
+      }
+      .topbar-items {
+        .search-item{
+          .topbar-search{
+            i{
+              right: auto;
+              left: 10px;
+            }
+          }
+        }
+      }
+      .profile-item{
+        .profile-charge{
+          >a{
+            .profile-image{
+              border-radius: 50%;
+              border: 2px solid #d9edf7;
+              float: left ;
+              margin-left: 0;
+              margin-right: 12px;
+              background-size: cover;
+              background-position: center;
+            }
+          }
+        }
+      }
+    
+      .topbar-item-role{
+        i{
+          float: left;
+        }
+      }
+      #topbar-menu-button{
+       display: none;
+
+      }
+      .profile-charge{
+        position: relative;
+        i{
+          position: absolute;
+          left: 48px;
+          bottom: 1px;
+          color: #fff;
+          cursor: pointer;
+        }  
+        a{
+          cursor: pointer;
+          display: block;
+          img{
+            float: left;
+            margin-left: 0;
+            margin-right: 12px;
+          }
+          span.topbar-item-name{
+            float: right;
+            display: inline-block;
+          }
+          span.topbar-item-role{
+            display: block;
+            font-size: 12px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  .topbar-left{
+    float: right;
+  }
+ }
+}
+div.login-form--container{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+  background: url(../img/Login-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $blue;
+  &:after{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    background-color: rgba(20,111,215,.5);
+    z-index: 150;
+  }
+  div.login-page{
+    position: absolute;
+    background-color: #fff;
+    z-index: 170;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5); 
+    width: 368px;
+    span.ui-float-label {
+      display: flex;
+      input{
+       flex-grow: 1;
+      }
+      div.ui-message{
+        white-space: nowrap;
+        margin-left: 0;
+        min-width: 115px;
+        span.ui-message-icon{
+          display: none;
+        }
+        span.ui-message-text{
+          font-size: 11px;
+        }
+      }
+    }
+    button[type="submit"]{
+        background-color: $blue;
+        border-color: $blue;
+        &:hover,
+        &:active,
+        &:focus{
+          background-color: $blue;
+        }
+    }
+    button[type="submit"]:disabled{
+      opacity: 0.5;
+   }
+   p.text-danger{
+     color: $red;
+   }
+   div.big-message {
+     div.ui-message{
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+      span.ui-message-icon{
+        display: none;
+      }
+      span.ui-message-text{
+        font-size: 13px;
+      }
+     }
+   }
+  }
+}
+.layout-main{
+  min-height: calc(100vh - 56px)
+}
+.layout-footer{
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px !important;
+  span.footer-logo-name{
+    color: $red;
+  }
+}
+.card{
+  overflow:hidden;
+  height: auto;
+}
+.ui-float-label
+{
+  label{
+    left: auto;
+    right: .25em;
+  }
+} 
+
+div.requirement{
+  position: relative;
+  div.ui-message{
+    position: absolute;
+    bottom: -21px;
+    margin: 0;
+    background-color: initial;
+    color: $red;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+    span.ui-message-icon{
+      display:none;
+    }
+  }
+  input{
+    transition: all 300ms;
+    border: 1px solid rgba(255, 23, 68, 0.58);
+    box-shadow: 0 0 0 0.2rem rgba(214, 0, 40, 0.32);
+  }
+}
+
+div.description{
+  textarea{
+    margin-top: 15px;
+    resize: none;
+    height: calc(100% - 50px);
+    width: 100%;
+    border-color: #ccc;
+    padding: 10px;
+  }
+}
+div.edit-shop-form{
+  button[type="submit"]{
+    width: 100px;
+    height: 45px;
+    float: left;
+    margin-left: 10px;
+  }
+  div#logoContainer{
+    img{
+      margin-right: 0;
+    }
+  }
+}
+td.k-command-cell{
+  text-align: center;
+  a.k-button.k-button-icontext.k-grid-edit{
+    border-color: #146fd7;
+    color: #146fd7;
+    margin:5px;
+    font-size: 12px;
+    transition: all 250ms ease-in-out;
+    span.k-icon{
+      font-size: 14px;
+      display: inline-block;
+    }
+    &:hover{
+      background-color:#146fd7;
+      color: #fff;
+    }
+  }
+  a.k-button.k-button-icontext.k-grid-delete{
+    border-color: $red;
+    /* color: #fff; */
+    font-size: 12px;
+    margin:5px;
+    transition: all 250ms ease-in-out;
+    span.k-icon{
+      font-size: 14px;
+      display: inline-block;
+
+    }
+    &:hover{
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
+td[role="gridcell"]{
+  >a{
+    overflow: hidden;
+  }
+}
+span.k-pager-info{
+  font-family: IRANSansWeb_FaNum !important;
+}
+ul{
+  li{
+    span,a{
+      font-family: IRANSansWeb_FaNum !important;
+    }
+  }
+}
+div.date-form{
+  display: flex;
+  align-items: flex-end;
+  > div{
+    width: 300px;
+    float: right;
+  }
+  >button{
+    color: #fff;
+    background-color: #146fd7;
+    &:focus{
+      color: #fff;
+    }
+  }
+}
+
+.layout-wrapper .layout-menu li a i:first-child {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.layout-wrapper .layout-menu-container .ui-scrollpanel .menu-scroll-content {
+  padding-left: 18px;
+  padding-right: 0;
+}
+.layout-wrapper .layout-menu-container.layout-menu-dark ul.layout-menu li.active-menuitem > a {
+  border-right-color: #6aa5d8;
+  color: #6aa5d8;
+  background-color: #282b30;
+}
+.layout-wrapper .layout-menu li a {
+  border-right: 4px solid transparent;
+  border-left: 0 solid transparent;
+  border-left-width: 0;
+  border-right-width: 4px;
+  border-left-color: transparent;
+}
+h1,h2{
+  font-weight: 500 !important;
+}
+textarea{
+  overflow-y: auto;
+  width: 100%;
+  border-color: #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  resize: none;
+}
+.ui-growl.ui-growl-topright {
+  left: 20px;
+  right: auto !important;
+}
+label.file-upload__label{
+  background-color: $blue;
+  color: #fff;
+  padding: 7px 13px;
+  border-radius: 3px;
+  display: inline-flex;
+  margin-top: 15px;
+  font-weight: 400;
+  i{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
+
+div.k-window-titlebar.k-header{
+  background-color: #fff;
+  border-color: #c7c7c7;
+  color: #333;
+}
+div.k-popup-edit-form{
+  div.k-edit-form-container{
+    div.k-edit-label{
+      width: auto;
+      padding: 0;
+      text-align: right;
+      margin-right: 0;
+      label[for="url"]{
+        width: 50px;
+        padding-left: 5px;
+        text-align: right;
+      }
+    }
+    div.k-edit-buttons.k-state-default{
+      background-color: #fff;
+      border-color: #c7c7c7;
+    }
+  }
+  div[data-container-for="url"]{
+    clear: none;
+    width: calc(100% - 50px) !important;
+    margin-left: 0;
+    input{
+      direction: ltr
+    }
+  }
+}
+
+div.remember-me{
+  label{
+    padding-left: 0;
+    padding-right: 1.85714em;
+    &::before,
+    &::after{
+      left: auto;
+      right: 0;
+    }
+  }
+}
+.ltr{
+  direction: ltr;
+}
+script[src*="static/"] ~ div{
+  svg{
+    transform: rotate(180deg)
+  }
+}
+div.add-product-edit-shop{
+  span.ui-message-icon{
+    display: none;
+  }
+}
+
+div.layout-footer{
+  justify-content: flex-end;
+}
+.ui-autocomplete-panel .ui-autocomplete-list-item {
+  text-align: right !important;
+}
+div.persian-number-date * {
+  font-family: IRANSansWeb_FaNum !important;
+}
+div.loading-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-content: center;
+  span{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: grey;
+  }
+  h1{
+    font-weight: 400 !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+//dashboard
+.dashboard{
+  .overview-box {
+    display: flex;
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    .overview-box-title {
+      span {
+        margin-right: .5em;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      i{
+        font-size: 20px;
+      }
+    }
+  
+    .overview-box-count{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+      font-size: 20px;
+      letter-spacing: 1px;
+      justify-content: flex-end;
+    }
+  }
+    .ui-panel-titlebar {
+      border-width: 1px !important;
+      border: 1px solid #dddddd ;
+      border-bottom: 1px solid #dddddd;
+      padding: 10px 15px;
+      -moz-border-radius-topleft: 4px;
+      -webkit-border-top-left-radius: 4px;
+      border-top-left-radius: 4px;
+      -moz-border-radius-topright: 4px;
+      -webkit-border-top-right-radius: 4px;
+      border-top-right-radius: 4px;
+      -moz-border-radius-bottomleft: 0px;
+      -webkit-border-bottom-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      -moz-border-radius-bottomright: 0px;
+      -webkit-border-bottom-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+   }
+    .product-statistics,
+    .global-sales{
+      table{
+        th{
+          text-align: right;
+        }
+        tbody{
+          tr{
+            td:nth-child(1){       
+                text-align: right;
+                font-weight: 400;            
+            }
+          }
+        }
+      }
+      .ui-panel-titlebar{
+     
+        i {
+          margin-left: 5px;
+          margin-right: 0;
+        } 
+        span{
+          font-weight: 500;
+        }
+      }   
+      table{
+        td.col-overview.col-wait{
+          img{
+            max-width: 40px;;
+          }
+        }
+      }
+    }
+    .product-statistics{
+  
+      .ui-panel-content{
+        padding:15px 0;
+      }
+      table{
+        td.col-status{
+          span.status-time{
+            font-weight: 500;
+            color: #000;
+          }
+          span.status-text{
+            font-weight: 500;
+            font-size: 11px;
+            color: #777;
+          }
+        }
+        td.col-numbers{
+          font-weight: 400;
+          font-size: 12px;
+          div{
+            color:#777;
+            font-size: 13px;
+            font-weight: 500;
+          }
+          span{
+            font-size: 14px;
+            font-weight: 500;
+            font-family: IRANSansWeb_FaNum !important;
+            margin-left:10px;
+            color: #000;
+          }
+        }
+     
+        tbody{
+           tr:nth-child(odd) {
+            background: #f9f9f9;
+         }
+        }
+      }
+    } 
+    .global-sales{
+      >.ui-panel{
+        height: 100%;
+        border: 1px solid #D5D5D5;
+        border-radius: 5px 5px 0 0;
+        .ui-panel-content{
+          border: none;
+        }
+        .ui-panel-content{
+          tbody{
+            tr{
+              td{
+                font-family: IRANSansWeb_FaNum !important;
+                font-weight: 500;
+                i{
+                  font-size: 26px;
+                  width: 40px;
+                  height: 40px;
+                  color: #fff;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                i.green-circle-icon{
+                  background-color: #28a745;
+                }
+                i.purpule-circle-icon{
+                  background-color: #6f42c1;
+                }
+                i.blue-icon-click{
+                  background-color: #007bff;
+                }
+                i.orange-icon-circle{
+                  background-color: #fd7e14;
+                }
+              }
+            }
+          }
+        }
+      }
+      .ui-panel-titlebar{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    .chart-click,.chart-session{
+        .ui-g.ui-fluid{
+          .ui-g-12 {
+            padding: 0;
+            .card{
+              border: 1px solid #DCE1E7;
+            }
+          }
+        }
+    }
+}
+
+div.chart-container{
+  .ui-panel-titlebar{
+    border: 1px solid #DCE1E7 !important;
+    i{
+      margin-left: 5px;
+    }
+    span{
+      font-weight: 500;
+    }
+  }
+  .card.last-veiw-chart{
+    .ui-chart{
+     height: 300px;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 1025px){
+  .layout-wrapper {
+    .topbar-items {
+      float: left;
+      margin: 0;
+      >li{
+        float: left;
+      }
+   }
+  }
+
+  .w-840{
+    width: 840px;
+    margin: 0 auto;
+  }
+
+  .layout-wrapper.menu-layout-static {
+    .layout-main , .layout-wrapper.menu-layout-static .layout-footer{
+    margin-right: 235px;
+    margin-left: 0;
+    }
+  }
+  .layout-wrapper.menu-layout-static .layout-menu-container {
+    margin-right: 0;
+  }
+  .layout-wrapper.menu-layout-static.layout-menu-static-inactive {
+    .layout-menu-container{
+      margin-right: -250px;
+      transition:all 0.3s;
+ 
+    }
+  }
+  .layout-wrapper.menu-layout-static {
+    .layout-menu-container{
+      transition:all 0.3s;
+    }
+  }
+  .layout-wrapper.menu-layout-static.layout-menu-static-inactive .layout-main, 
+  .layout-wrapper.menu-layout-static.layout-menu-static-inactive .layout-footer {
+    margin-right: 0px;
+  }
+  .layout-wrapper{
+    .layout-main{
+      transition: margin-right .3s
+    }
+  } 
+  .layout-wrapper.menu-layout-static .layout-main,
+  .layout-wrapper.menu-layout-static .layout-footer {
+    margin-right: 235px;
+    margin-left: 0;
+    transition: margin-right .3s;
+  }
+
+}
+
+@media(max-width:1024px){
+  .layout-wrapper.menu-layout-static .layout-menu-container {
+    margin-right: -265px;
+    margin-left: initial;
+    transition: margin-right 300ms
+  }
+.layout-wrapper.menu-layout-static.layout-menu-static-active .layout-menu-container {
+  margin-right: 0;
+  }
+.layout-wrapper.menu-layout-static.layout-menu-static-active .layout-menu-container {
+  margin-left: 0;
+  z-index: 999;
+}
+.layout-mask {
+  z-index: 998;
+}
+}
+
+@media only screen and (max-width : 992px){
+  .mobile-scroll{
+    overflow-x:auto;
+  }
+  .min-width{
+    min-width: 1000px;
+  }
+  div.k-pager-wrap{
+    ul.k-pager-numbers.k-state-expanded{
+      transform: translateY(0) !important;
+      bottom: 11px;
+      li.k-current-page{
+        display: none;
+      }
+      >li{
+        display: flex ;
+        justify-content: center;
+      }
+    }
+    ul.k-pager-numbers{
+      overflow: hidden !important;
+      > li.k-current-page{
+        >span{
+          width: auto !important;
+          padding: 0 !important;
+          transform: translateY(-3px) !important;
+          text-align: center !important;
+        }
+      }
+      > span.k-link.k-pager-nav{
+        width: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-top: 5px;
+      }
+      .k-webkit .k-rtl .k-pager-numbers+.k-link {
+        margin-right: 86px;
+        margin-left: 0;
+      }
+      a.k-link.k-pager-nav.k-state-disabled{
+        margin-right: 90px;
+      }
+    }
+  }
+  .layout-wrapper
+  {
+    .layout-menu-container 
+    {
+      .profile{
+        position: relative;
+        padding: 15px 10px;
+        > a {
+          .profile-image {
+            width: 40px;
+            height: 40px;
+            float: right;
+            margin-left: 4px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #fff;
+            margin-top: 5px;
+          } 
+          span.topbar-item-name{
+            color: #fff;
+            display: block;
+          }
+          span:not(.topbar-item-name){
+            color: #fff;
+            display:inline-block ;
+            margin-top: 5px;
+          }
+        } 
+        > i {
+          position: absolute;
+          bottom: 17px;
+          left: 20px;
+        }
+     }
+    }
+  } 
+}
+
+@media only screen and (max-width : 640px){
+  .mrgT15-mobile{
+    margin-top: 15px;
+  }
+  div#pr_id_1{
+    max-width: 100%;
+    left: 0 !important;
+  }
+  div.chart-container{
+    overflow-x: auto;
+    >div.ui-panel {
+      min-width: 1100px;
+    }
+  }
+  
+}
+
+@media only screen and (max-width : 480px){
+  .layout-wrapper {
+    .layout-main{
+        padding:  80px 0 0 0 ;
+    }
+  }
+}
+
+
+
+
